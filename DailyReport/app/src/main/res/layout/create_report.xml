@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Create Report"
+        android:textSize="24sp"
+        android:textColor="#980e9b"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Report Name"
+            android:textSize="16sp"
+            android:textColor="#de05ff"/>
+        <EditText
+            android:id="@+id/reportTitle"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Report Writer"
+            android:textSize="16sp"
+            android:textColor="#de05ff"/>
+        <EditText
+            android:id="@+id/reportWriter"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Time Create"
+            android:textSize="16sp"
+            android:textColor="#de05ff"/>
+
+        <TextView
+            android:id="@+id/timeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:ems="10"
+            android:textSize="20sp"
+            android:layout_margin="8dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Content Report"
+            android:textSize="16sp"
+            android:textColor="#de05ff"/>
+
+        <EditText
+            android:id="@+id/contentReport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <!--<EditText-->
+            <!--android:id="@+id/content"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="7"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/download" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/camera"/>
+            <ImageView
+                android:id="@+id/file"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/file" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"/>
+
+
+</LinearLayout>

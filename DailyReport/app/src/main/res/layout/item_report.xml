@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="2">
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_margin="8dp"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/Titlerp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/dateCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Create"/>
+        <TextView
+            android:id="@+id/contentrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>
